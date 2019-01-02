@@ -1,0 +1,60 @@
+{% extends 'panel/base.html' %}
+{% block content %}
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                 <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Düzenleme Tablosu</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>
+                        <a href="/panel/altkategoriresimekle" class="btn btn-success pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">EKLE</a>
+                        <ol class="breadcrumb">
+                            <li><a href="#">ANASAYFA</a></li>
+                            <li><a href="#">ALTKATEGORİ</a></li>
+                            <li class="active">TABLO</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /row -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">MANAGE USERS</div>
+                            <div class="table-responsive">
+                                <table class="table table-hover manage-u-table">
+                                    <thead>
+                                        <tr>
+                                            <th width="70" class="text-center">#</th>
+                                            <th>Adı</th>
+                                            <th>Resim</th>
+                                            <th width="300">MANAGE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for i in tumu %}
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td>
+                                                {{ i.title }}
+                                            </td>
+                                            <td><img width="150px;" height="150px;" src="{{MEDIA_URL}}{{ i.kategori_image }}"></td>
+                                            <td>
+                                                <a href="/panel/altkategoriresimsil/{{ i.id }}" class="btn btn-info btn-outline btn-circle btn-lg m-r-5"><i class="ti-trash"></i></a>
+                                                <a href="/panel/altkategoriresimduzenle/{{ i.id }}" class="btn btn-info btn-outline btn-circle btn-lg m-r-5"><i class="ti-pencil-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by themedesigner.in </footer>
+        </div>
+{% endblock %}

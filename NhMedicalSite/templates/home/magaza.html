@@ -1,0 +1,483 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+
+
+
+{% block main %}
+
+<main>
+	<section class="container">
+
+
+		<ul class="b-crumbs">
+			<li>
+				<a href="/index">
+					Ana Sayfa
+				</a>
+			</li>
+			<li>
+				<a href="/magaza">
+					Katalog
+				</a>
+			</li>
+			<li>
+				<span>Ürünler</span>
+			</li>
+		</ul>
+		<h1 class="main-ttl"><span>ÜRÜN GRUPLARI</span></h1>
+		<!-- Catalog Sidebar - start -->
+		<div class="section-sb">
+
+			<!-- Catalog Categories - start -->
+			<div class="section-sb-current">
+				<h3><a href="/magaza">Muayene Ürünleri <span id="section-sb-toggle" class="section-sb-toggle"><span class="section-sb-ico"></span></span></a></h3>
+				<ul class="section-sb-list" id="section-sb-list">
+					<li class="categ-1">
+						<a href="/magaza">
+							<span class="categ-1-label">Pudralı Lateks</span>
+						</a>
+					</li>
+					<li class="categ-1">
+						<a href="/magaza">
+							<span class="categ-1-label">Pudrasız Lateks</span>
+						</a>
+					</li>
+					<li class="categ-1">
+						<a href="/magaza">
+							<span class="categ-1-label">Nitril</span>
+						</a>
+					</li>
+							<li class="categ-1">
+						<a href="/magaza">
+							<span class="categ-1-label">Vinil</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Catalog Categories - end -->
+
+			<!-- Filter - start -->
+			<div class="section-filter">
+				<button id="section-filter-toggle" class="section-filter-toggle" data-close="Hide Filter" data-open="Show Filter">
+					<span>Show Filter</span> <i class="fa fa-angle-down"></i>
+				</button>
+				<div class="section-filter-cont">
+					<div class="section-filter-price">
+						<div class="range-slider section-filter-price" data-min="0" data-max="1000" data-from="200" data-to="800" data-prefix="$" data-grid="false"></div>
+					</div>
+					<div class="section-filter-item">
+						<p class="section-filter-ttl">Stil <i class="fa fa-angle-down"></i></p>
+						<div class="section-filter-fields">
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox2-1" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox2-1">Beyaz Lateks Pudralı</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox2-2" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox2-2">Beyaz Lateks Pudrasız</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox2-3" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox2-3">Mavi Nitril Pudrasız</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox2-4" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox2-4">Siyah Nitril Pudrasız</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox2-5" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox2-5">Mavi Vinil Pudrasız</label>
+							</p>
+						</div>
+					</div>
+					<div class="section-filter-item opened">
+						<p class="section-filter-ttl">Kumaş Türü <i class="fa fa-angle-down"></i></p>
+						<div class="section-filter-fields">
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-1" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-1">Koton</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-2" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-2">Kauçuk</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-3" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-3">Polyester</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-4" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-4">Pamuk</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-5" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-5">Mikrofiber</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox3-6" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox3-6">İpek</label>
+							</p>
+
+						</div>
+					</div>
+					<div class="section-filter-item opened">
+						<p class="section-filter-ttl">Renk <i class="fa fa-angle-down"></i></p>
+						<div class="section-filter-fields">
+							<ul class="section-filter-color">
+								<li class="active"><img src="{% static "home/img/color/red.jpg"%}" alt="Red"></li>
+								<li><img src="{% static "home/img/color/blue.jpg"%}" alt="Blue"></li>
+								<li><img src="{% static "home/img/color/green.jpg"%}" alt="Green"></li>
+								<li><img src="{% static "home/img/color/yellow.jpg"%}" alt="Yellow"></li>
+								<li><img src="{% static "home/img/color/purple.jpg"%}" alt="Purple"></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="section-filter-item">
+						<p class="section-filter-ttl">Beden <i class="fa fa-angle-down"></i></p>
+						<div class="section-filter-fields">
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox4-1" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox4-1">XL</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox4-2" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox4-2">L</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox4-3" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox4-3">M</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox4-4" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox4-4">S</label>
+							</p>
+							<p class="section-filter-field">
+								<input id="section-filter-checkbox4-5" value="on" type="checkbox">
+								<label class="section-filter-checkbox" for="section-filter-checkbox4-5">XS</label>
+							</p>
+						</div>
+					</div>
+
+					<div class="section-filter-buttons">
+						<input class="btn btn-themes" id="set_filter" name="set_filter" value="Filtreyi Uygula" type="button">
+						<input class="btn btn-link" id="del_filter" name="del_filter" value="Sıfırla" type="button">
+					</div>
+				</div>
+			</div>
+			<!-- Filter - end -->
+
+		</div>
+		<!-- Catalog Sidebar - end -->
+		<!-- Catalog Items | Gallery V1 - start -->
+		<div class="section-cont">
+
+			<!-- Catalog Topbar - start -->
+			<div class="section-top">
+
+				<!-- View Mode -->
+				<ul class="section-mode">
+					<li class="section-mode-gallery active"><a title="Görüntüleme Modu: Galeri" href="/magaza"></a></li>
+					<li class="section-mode-list"><a title="Görüntüleme Modu: Liste" href="/magaza"></a></li>
+					<li class="section-mode-table"><a title="Görüntüleme Modu: Tablo" href="/magaza"></a></li>
+				</ul>
+
+				<!-- Sorting -->
+
+
+				<!-- Count per page -->
+
+
+			</div>
+			<!-- Catalog Topbar - end -->
+			<div class="prod-items section-items">
+
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="Beyaz Lateks Pudralı"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Beyaz Lateks Pudralı</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrasiz-S.jpg" alt="Beyaz Lateks Pudrasız"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+
+						<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Beyaz Lateks Pudrasız</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Nitril-Pudrasiz-S-3D.jpg" alt="Dignissimos eaque earum"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Nitril</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Nitril-Pudrasiz-S-3D.jpg" alt="Dignissimos eaque earum"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+
+					<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="#" class="prod-i-buy">Sipariş ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Nitril</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Nitril-Pudrasiz-S-3D.jpg" alt="Dignissimos eaque earum"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Nitril</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Vinil-Pudrasiz-S.jpg" alt="Maxime molestias necessitatibus nobis"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Mavi Vinil</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Vinil-Pudrasiz-S.jpg" alt="Maxime molestias necessitatibus nobis"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+					</div>
+					<h3>
+						<a href="/urun">Mavi Vinil</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- No SPACEO --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Vinil-Pudrasiz-S.jpg" alt="Maxime molestias necessitatibus nobis"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/iletisim" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Mavi Vinil</a>
+					</h3>
+
+				</div>
+				<div class="prod-i">
+					<div class="prod-i-top">
+						<a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="http://www.nhmedical.com.tr/images/urunler/Mavi-Vinil-Pudrasiz-S.jpg" alt="Maxime molestias necessitatibus nobis"><!-- NO SPACE --></a>
+						<p class="prod-i-info">
+							<a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+							<a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+							<a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+						</p>
+						<a href="/sepet" class="prod-i-buy">Sipariş Ver</a>
+
+					</div>
+					<h3>
+						<a href="/urun">Mavi Vinil</a>
+					</h3>
+
+				</div>
+
+			</div>
+
+			<!-- Pagination - start -->
+			<ul class="pagi">
+				<li class="active"><span>1</span></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li class="pagi-next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+			</ul>
+			<!-- Pagination - end -->
+		</div>
+		<!-- Catalog Items | Gallery V1 - end -->
+
+		<!-- Quick View urun - start -->
+		<div class="qview-modal">
+			<div class="prod-wrap">
+				<a href="/urun">
+					<h1 class="main-ttl">
+						<span>BEYAZ LATEKS PUDRALI</span>
+					</h1>
+				</a>
+				<div class="prod-slider-wrap">
+					<div class="prod-slider">
+						<ul class="prod-slider-car">
+							<li>
+								<a data-fancybox-group="popup-urun" class="fancy-img" href="http://placehold.it/500x525">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a data-fancybox-group="popup-urun" class="fancy-img" href="http://placehold.it/500x591">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="prod-thumbs">
+						<ul class="prod-thumbs-car">
+							<li>
+								<a data-slide-index="0" href="#">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a data-slide-index="1" href="#">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-M.jpg" alt="">
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="prod-cont">
+					<p class="prod-actions">
+						<a href="#" class="prod-favorites"><i class="fa fa-heart"></i>Listeye Ekle</a>
+						<a href="#" class="prod-compare"><i class="fa fa-bar-chart"></i>Karşılaştır</a>
+					</p>
+					<div class="prod-skuwrap">
+						<p class="prod-skuttl">Renk</p>
+						<ul class="prod-skucolor">
+							<li class="active">
+								<img src="{% static "home/img/color/blue.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/red.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/green.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/yellow.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/purple.jpg"%}" alt="">
+							</li>
+						</ul>
+						<p class="prod-skuttl">Boyutlar</p>
+						<div class="offer-props-select">
+							<p>XL</p>
+							<ul>
+								<li><a href="#">XS</a></li>
+								<li><a href="#">S</a></li>
+								<li><a href="#">M</a></li>
+								<li class="active"><a href="#">XL</a></li>
+								<li><a href="#">L</a></li>
+								<li><a href="#">4XL</a></li>
+								<li><a href="#">XXL</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="prod-info">
+						<p class="prod-price">
+							<b class="item_current_price">$ 0</b>
+						</p>
+						<p class="prod-qnt">
+							<input type="text" value="1">
+							<a href="#" class="prod-plus"><i class="fa fa-angle-up"></i></a>
+							<a href="#" class="prod-minus"><i class="fa fa-angle-down"></i></a>
+						</p>
+						<p class="prod-addwrap">
+							<a href="/sepet" class="prod-add">Sipariş Ver</a>
+						</p>
+					</div>
+					<ul class="prod-i-props">
+						<li>
+							Uygun fiyatı ile maliyetlerinizi düşürmeye yardımcıdır.
+						</li>
+						<li>
+							Pudrasız olmasına rağmen özel iç yüzeyi ile giyimi kolaydır.
+						</li>
+						<li>
+							Sağlık , temizlik , gıda ve toptan satış sektöründe tercih edilir.
+						</li>
+						<li>
+							Hammaddesi sayesinde dayanıklılığı yüksektir.
+						</li>
+						<li>
+							EN 455 1-2-3 standartlarını karşılar.
+						</li>
+						<li>
+							XS-S-M-L-XL bedenleri mevcuttur.
+						</li>
+						<li>
+							KOLİ : 20 x 100 lük paket
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Quick View urun - end -->
+	</section>
+</main>
+<!-- Main Content - end -->
+{% endblock %}
+

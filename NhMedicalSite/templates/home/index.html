@@ -1,0 +1,907 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+<!-- Header - start -->
+
+<!-- Header - end -->
+{% block main %}
+<main>
+    <section class="container">
+       <!-- Banners -->
+        <div class="banners-wrap" style="border-bottom:3px solid #005792;">
+            <div class="banners-list">
+                <div class="banner-i style_11">
+                    <span class="banner-i-bg" style="background-image: url({% static "home/img/PUDRALILATEKS.jpg"%}");></span>
+                    <div class="banner-i-cont">
+                        <p class="banner-i-subttl">Eldivenler</p>
+                        <h3 class="banner-i-ttl">Pudralı<br>Lateks</h3>
+                        <p class="banner-i-link"><a href="/magaza">Daha Fazla</a></p>
+                    </div>
+                </div>
+                <div class="banner-i style_22">
+                    <span class="banner-i-bg" style="background-image: url({% static "home/img/Pudrasız.jpg"%}");></span>
+                    <div class="banner-i-cont">
+                        <p class="banner-i-subttl">Eldivenler</p>
+                        <h3 class="banner-i-ttl">Pudrasız<br>Lateks</h3>
+                        <p class="banner-i-link"><a href="/magaza">Fazlasını Göster</a></p>
+                    </div>
+                </div>
+                <div class="banner-i style_21">
+                       <span class="banner-i-bg" style="background-image: url({% static "home/img/mavi_nitril/umesaj34820_05420xiisf43dbqucfj8knjyvi.jpg"%}");></span>
+                    <div class="banner-i-cont">
+                        <h3 class="banner-i-ttl"><br></h3>
+                        <p class="banner-i-link"><a href="/iletisim">Sipariş Ver</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Popular Products -->
+        <div class="fr-pop-wrap">
+
+            <h3 class="component-ttl"><span>Populer Ürünler</span></h3>
+
+            <ul class="fr-pop-tabs sections-show">
+                <li><a data-frpoptab-num="1" data-frpoptab="#frpoptab-tab-1" href="#" class="active">Bütün Kategoriler</a></li>
+                <li><a data-frpoptab-num="2" data-frpoptab="#frpoptab-tab-2" href="#">Pudralı Lateks</a></li>
+                <li><a data-frpoptab-num="3" data-frpoptab="#frpoptab-tab-3" href="#">Pudrasız Lateks</a></li>
+                <li><a data-frpoptab-num="4" data-frpoptab="#frpoptab-tab-4" href="#">Nitril</a></li>
+                <li><a data-frpoptab-num="5" data-frpoptab="#frpoptab-tab-5" href="#">Vinil</a></li>
+            </ul>
+
+            <div class="fr-pop-tab-cont">
+
+                <p data-frpoptab-num="1" class="fr-pop-tab-mob active" data-frpoptab="#frpoptab-tab-1">Bütün Kategoriler</p>
+                <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-1">
+
+                    <ul class="slides">
+
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/20lik.jpg"%}"  alt="Aspernatur excepturi rem"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">20lik</a>
+                            </h3>
+
+                            <div class="prod-i-skuwrapcolor">
+                                <ul class="prod-i-skucolor">
+                                    <li class="bx_active"><img src="{% static "home/img/urunler/20likLatekspudrali.jpg"%}" alt="Red"></li>
+                                    <li><img src="{% static "home/img/color/blue.jpg"%}" alt="Blue"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/20likLatekspudrali.jpg"%}" alt="Aperiam tempore"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">20likLatekspudralı</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/50lik.jpg"%}" alt="Blanditiis eaque"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                      <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">50lik</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/BeyazLateksPudralı.jpg"%}" alt="Excepturi ducimus"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                   <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">BeyazLateksPudralı</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/BeyazLateksPudrasız.jpg"%}" alt="Sit recusandae voluptas"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-1">Yeni</p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">BeyazLateksPudrasız</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/BeyazNitril.jpg"%}" alt="Consequuntur minus atque"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">BeyazNitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/BeyazVinil.jpg"%}" alt="Nostrum nihil ipsa"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">BeyazVinil</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Comfort50lik.jpg"%}" alt="Non ex sapiente deserunt"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-3">-30%</p><p class="prod-sticker-4 countdown" data-date="29 Jan 2017, 14:30:00"></p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">Comfort50lik</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MasterforceSiyah.jpg"%}" alt="Amet tempore unde"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                   <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MasterforceSiyah</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MasterforceTuruncu.jpg"%}" alt="Neque fugiat voluptates"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MasterforceTuruncu</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MaviLateksPudralı.jpg"%}" alt="Amet tempore unde"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MaviLateksPudralı</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MaviNitril.jpg"%}" alt="Perspiciatis dolor"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MaviNitril</a>
+                            </h3>
+
+                            <div class="prod-i-skuwrapcolor">
+                                <ul class="prod-i-skucolor">
+                                    <li class="bx_active"><img src="{% static "home/img/color/red.jpg"%}" alt="Red"></li>
+                                    <li><img src="{% static "home/img/color/blue.jpg"%}" alt="Blue"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MaviPudralı.jpg"%}" alt="Veritatis officiis quae"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MaviPudralı</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/MaviVinil.jpg"%}" alt="Fuga numquam obcaecati"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">MaviVinil</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Nitril.jpg"%}" alt="Ratione magni"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Pudralı.jpg"%}" alt="Asperiores sit sequi"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudralı</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Pudrasız.jpg"%}" alt="Repudiandae accusamus"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudrasız</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Siyah.jpg"%}" alt="Quod praesentium illum"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Siyah</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/SiyahNitril.jpg"%}" alt="Deleniti ut earum"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Siyah Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Turuncu.jpg"%}" alt="Voluptatem quibusdam"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Turuncu</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/urunler/Vinil.jpg"%}" alt="Nisi provident atque"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Vinil</a>
+                            </h3>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                <p data-frpoptab-num="2" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-2">Kids</p>
+                <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-2">
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/Beyaz_Nitril_PudraliL3D.jpg"%}"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                      <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudralı Lateks</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/Beyaz_Nitril_PudraliM3D.jpg"%}"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                      <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-3">-30%</p><p class="prod-sticker-4 countdown" data-date="29 Jan 2017, 14:30:00"></p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudralı Lateks</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/Beyaz_Nitril_PudraliS3D.jpg"%}" alt="Amet tempore unde"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudralı Lateks</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/PUDRALILATEKS.jpg" %}"alt="Neque fugiat voluptates"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Sepete Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudralı Lateks</a>
+                            </h3>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <p data-frpoptab-num="3" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-3">Pudralı Lateks</p>
+                <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-3">
+
+                    <ul class="slides">               
+                
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/siyah_nitril/SiyahNitrilPudrasizXL3D.jpg"%}" alt="Voluptatem quibusdam"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Pudrasız Lateks</a>
+                            </h3>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <p data-frpoptab-num="4" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-4">Pudrasız Lateks</p>
+                <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-4">
+
+                    <ul class="slides">
+
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/siyah_nitril/SiyahNitrilPudrasizXL3D.jpg"%}"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/siyah_nitril/SiyahNitrilPudrasizM3D.jpg"%}" alt="Eveniet nobis minus possimus"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-1">Yeni</p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                         <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/siyah_nitril/SiyahNitrilPudrasizL3D.jpg"%}" alt="Eveniet nobis minus possimus"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-1">Yeni</p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/mavi_nitril/umesaj34820_05420xiisf43dbqucfj8knjyvi.jpg"%}" alt="Quis ex fugiat blanditiis"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Detaya Git</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                            <div class="prod-i-skuwrapcolor">
+                                <ul class="prod-i-skucolor">
+                                    <li class="bx_active"><img src="{% static "home/img/color/red.jpg"%}" alt="Red"></li>
+                                    <li><img src="{% static "home/img/color/blue.jpg"%}" alt="Blue"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/mavi_nitril/MaviNitrilPudrasizXL3D.jpg" %}"alt="Nisi autem error"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/mavi_nitril/MaviNitrilPudrasizM3D.jpg"%}" alt="Quod soluta corrupti"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/mavi_nitril/MaviNitrilPudrasizL3D.jpg"%}" alt="Ipsa doloremque"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/mavi_nitril/MaviNitrilPudrasizS3D.jpg"%}" alt="Dignissimos fuga"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                    <a href="#" class="prod-i-favorites"><span>Wishlist</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Compare</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Nitril</a>
+                            </h3>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <p data-frpoptab-num="5" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-5">Nitril</p>
+                <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-5">
+
+                    <ul class="slides">
+
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/vinil/BeyazVinil.jpg" %}" alt="Nisi autem error"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Detaya Git</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Vinil</a>
+                            </h3>
+                            <p class="prod-i-price">
+                                <b></b>
+                            </p>
+                            <div class="prod-i-skuwrapcolor">
+                                <ul class="prod-i-skucolor">
+                                    <li class="bx_active"><img src="{% static "home/img/color/red.jpg"%}" alt="Red"></li>
+                                    <li><img src="{% static "home/img/color/blue.jpg"%}" alt="Blue"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/vinil/MaviVinil.jpg" %}"alt="Tempora ea ratione vel"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                     <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+
+                                <div class="prod-sticker">
+                                    <p class="prod-sticker-2">HIT</p>
+                                </div>
+                            </div>
+                            <h3>
+                                <a href="/urun">Vinil</a>
+                            </h3>
+                           {% comment %} <p class="prod-i-price">
+                                <b>120</b>
+                            </p>{% endcomment %}
+                        </li>
+                        <li class="prod-i">
+                            <div class="prod-i-top">
+                                <a href="/urun" class="prod-i-img" style="border:1px solid #005792;"><!-- NO SPACE --><img src="{% static "home/img/vinil/Vinil.jpg" %}"alt="Minus sequi iste"><!-- NO SPACE --></a>
+                                <p class="prod-i-info">
+                                   <a href="#" class="prod-i-favorites"><span>İstek Listesi</span><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="qview-btn prod-i-qview"><span>Hızlı Görünüm</span><i class="fa fa-search"></i></a>
+                                    <a class="prod-i-compare" href="#"><span>Karşılaştır</span><i class="fa fa-bar-chart"></i></a>
+                                </p>
+                                <p class="prod-i-addwrap">
+                                    <a href="#" class="prod-i-add">Kart Ekle</a>
+                                </p>
+                            </div>
+                            <h3>
+                                <a href="/urun">Vinil</a>
+                            </h3>
+                           {% comment %} <p class="prod-i-price">
+                                <b>135</b>
+                            </p>{% endcomment %}
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- .fr-pop-tab-cont -->
+        </div><!-- .fr-pop-wrap -->
+        <!-- Quick View Product - start -->
+        <div class="qview-modal">
+			<div class="prod-wrap">
+				<a href="/urun">
+					<h1 class="main-ttl">
+						<span>BEYAZ LATEKS PUDRALI</span>
+					</h1>
+				</a>
+				<div class="prod-slider-wrap">
+					<div class="prod-slider">
+						<ul class="prod-slider-car">
+							<li>
+								<a data-fancybox-group="popup-urun" class="fancy-img" href="http://placehold.it/500x525">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a data-fancybox-group="popup-urun" class="fancy-img" href="http://placehold.it/500x591">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="prod-thumbs">
+						<ul class="prod-thumbs-car">
+							<li>
+								<a data-slide-index="0" href="#">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-S.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a data-slide-index="1" href="#">
+									<img src="http://www.nhmedical.com.tr/images/urunler/Beyaz-Lateks-Pudrali-M.jpg" alt="">
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="prod-cont">
+					<p class="prod-actions">
+						<a href="#" class="prod-favorites"><i class="fa fa-heart"></i>Listeye Ekle</a>
+						<a href="#" class="prod-compare"><i class="fa fa-bar-chart"></i>Karşılaştır</a>
+					</p>
+					<div class="prod-skuwrap">
+						<p class="prod-skuttl">Renk</p>
+						<ul class="prod-skucolor">
+							<li class="active">
+								<img src="{% static "home/img/color/blue.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/red.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/green.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/yellow.jpg"%}" alt="">
+							</li>
+							<li>
+								<img src="{% static "home/img/color/purple.jpg"%}" alt="">
+							</li>
+						</ul>
+						<p class="prod-skuttl">Boyutlar</p>
+						<div class="offer-props-select">
+							<p>XL</p>
+							<ul>
+								<li><a href="#">XS</a></li>
+								<li><a href="#">S</a></li>
+								<li><a href="#">M</a></li>
+								<li class="active"><a href="#">XL</a></li>
+								<li><a href="#">L</a></li>
+								<li><a href="#">4XL</a></li>
+								<li><a href="#">XXL</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="prod-info">
+						<p class="prod-price">
+							<b class="item_current_price">$ 0</b>
+						</p>
+						<p class="prod-qnt">
+							<input type="text" value="1">
+							<a href="#" class="prod-plus"><i class="fa fa-angle-up"></i></a>
+							<a href="#" class="prod-minus"><i class="fa fa-angle-down"></i></a>
+						</p>
+						<p class="prod-addwrap">
+							<a href="/sepet" class="prod-add">Sipariş Ver</a>
+						</p>
+					</div>
+					<ul class="prod-i-props">
+						<li>
+							Uygun fiyatı ile maliyetlerinizi düşürmeye yardımcıdır.
+						</li>
+						<li>
+							Pudrasız olmasına rağmen özel iç yüzeyi ile giyimi kolaydır.
+						</li>
+						<li>
+							Sağlık , temizlik , gıda ve toptan satış sektöründe tercih edilir.
+						</li>
+						<li>
+							Hammaddesi sayesinde dayanıklılığı yüksektir.
+						</li>
+						<li>
+							EN 455 1-2-3 standartlarını karşılar.
+						</li>
+						<li>
+							XS-S-M-L-XL bedenleri mevcuttur.
+						</li>
+						<li>
+							KOLİ : 20 x 100 lük paket
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+        <!-- Quick View Product - end -->
+    </section>
+</main>
+<!-- Main Content - end -->
+{% endblock %}
+
+<!-- Footer - start -->

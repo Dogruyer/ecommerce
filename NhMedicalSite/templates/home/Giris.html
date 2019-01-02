@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="tr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>NH Medical</title>
+		<meta name="description" content="NH Medical" />
+		<meta name="keywords" content="100% grid, layout, columns, images, thumbnails, responsive, full width grid, image grid, css, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="{% static "home/css/default.css"%}" />
+		<link rel="stylesheet" type="text/css" href="{% static "home/css/component.css"%}" />
+		<script src="{% static "home/js/modernizr.custom.js"%}"></script>
+	</head>
+	<body>
+			<!--<header class="clearfix">-->
+				<!--<span>Blueprint</span>-->
+				<!--<h1>Responsive Full Width Grid</h1>-->
+				<!--<nav>-->
+					<!--<a href="http://tympanus.net/Blueprints/SlidePushMenus/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>-->
+					<!--<a href="http://tympanus.net/codrops/?p=14727" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>-->
+				<!--</nav>-->
+			<!--</header>	-->
+			<ul class="cbp-rfgrid">
+				<li style="width: 50%; height: 500px; background-repeat: no-repeat; background: bisque "><a href="/index"><img src="{% static "home/img/shutterstock_sağlık.jpg"%}" alt=""> <div><h3>Sağlık ve Dişçilik</h3></div></a></li>
+				<li style="width: 50%; height: 500px;  background-repeat: no-repeat; background: aliceblue"><a href="/index"><img src="{% static "home/img/shutterstock_restoran.jpg"%}" alt=""><div><h3>Gıda ve Restoran İşletme</h3></div></a></li>
+				<li style="width: 50%; height: 500px;  background-repeat: no-repeat; background: azure "><a href="/index"><img src="{% static "home/img/shutterstock_otomotiv.jpg"%}" alt=""><div><h3>Sanayi / Hırdavat / Otomotiv</h3></div></a></li>
+				<li style="width: 50%; height: 500px;  background-repeat: no-repeat; background: blanchedalmond "><a href="/index"><img src="{% static "home/img/shutterstock_temizlik.jpg"%}" alt=""><div><h3>Temizlik ve Ambalaj</h3></div></a></li>
+			</ul>
+
+	</body>
+</html>

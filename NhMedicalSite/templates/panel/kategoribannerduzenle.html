@@ -1,0 +1,75 @@
+{% extends 'panel/base.html' %}
+{% block content %}
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">Notifications</h4></div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i
+                        class="ti-settings text-white"></i></button>
+                <a href="javascript: void(0);" target="_blank"
+                   class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Buy Admin
+                    Now</a>
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Ui Elements</a></li>
+                    <li class="active">Notifications</li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="white-box">
+                    <h3 class="box-title m-b-0">Sample Basic Forms</h3>
+                    <p class="text-muted m-b-30 font-13"> Bootstrap Elements </p>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <form method="POST" action="" class="form-signin" role="form" enctype="multipart/form-data">
+                                <div class="control-group">
+                                    <label>Title</label>
+                                    <div class="controls">
+                                        <input type="text" name="title" value="{{ adi }}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Title</label>
+                                    <div class="controls">
+                                        <input type="text" name="title" value="{{ content }}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="file" name="blog_image">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Title</label>
+                                    <div class="controls">
+                                       <select class="form-control" id = "kategori" name = "kategori">
+                                        {% for k in tumkategoriler %}
+                                            <option id = "{{k.id}}" name = "{{k.id}}" value = "{{k.id}}"> {{ k.title }} </option>
+                                         {% endfor %}
+                                        </select>
+                                        <br/>
+                                    </div>
+                                </div>
+
+
+                                <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit
+                                </button>
+                                {% csrf_token %}
+                                <!--<button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>-->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+    <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by themedesigner.in</footer>
+</div>
+{% endblock %}

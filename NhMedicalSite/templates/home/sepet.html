@@ -1,0 +1,156 @@
+{% extends 'home/base.html' %}
+
+{% load staticfiles %}
+
+
+
+
+{% block main %}
+    <main>
+
+        <section class="container stylization maincont">
+
+            <ul class="b-crumbs">
+                <li>
+                    <a href="/index">
+                        Ana Sayfa
+                    </a>
+                </li>
+                <li>
+                    <span>Sepet</span>
+                </li>
+            </ul>
+            <h1 class="main-ttl"><span>Sepetim</span></h1>
+            <!-- Cart Items - start -->
+            <form action="#">
+
+                <div class="cart-items-wrap">
+                    <table class="cart-items">
+                        <thead>
+                        <tr>
+                            <td class="cart-image">Resim</td>
+                            <td class="cart-ttl">Ürünler</td>
+                            <td class="cart-quantity">Adet</td>
+                            <td class="cart-del">&nbsp;</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="cart-image">
+                                <a href="/urun">
+                                    <img src="{% static "home/img/Pudrasız.jpg" %}" alt="">
+                                </a>
+                            </td>
+                            <td class="cart-ttl">
+                                <a href="/urun">Pudrasız Lateks</a>
+                                <p>Renk: Kırmızı</p>
+                                <p>Boyut: S</p>
+                            </td>
+
+                            <td class="cart-quantity">
+                                <input value="" type="text" placeholder="Adet Giriniz" onkeypress="return isNumberKey(event)" required maxlength="3" class="adetUrun">
+                            </td>
+
+                            <td class="cart-del">
+                                <a href="#" class="cart-remove"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart-image">
+                                <a href="/urun">
+                                    <img src="{% static "home/img/Vinil.jpg" %}" alt="">
+                                </a>
+                            </td>
+                            <td class="cart-ttl">
+                                <a href="/urun">Vinil</a>
+                                <p>Renk: Blue</p>
+                                <p>Boyut: XS</p>
+                            </td>
+
+                            <td class="cart-quantity">
+                                <input value="" type="text" placeholder="Adet Giriniz" onkeypress="return isNumberKey(event)" required maxlength="3"  class="adetUrun">
+                            </td>
+
+                            <td class="cart-del">
+                                <a href="#" class="cart-remove"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart-image">
+                                <a href="/urun">
+                                    <img src="{% static "home/img/Beyaz_Nitril_PudraliL3D.jpg" %}" alt="">
+                                </a>
+                            </td>
+                            <td class="cart-ttl">
+                                <a href="/urun">Beyaz Nitril Pudralı</a>
+                                <p>Renk: Blue</p>
+                                <p>Boyut: XS</p>
+                            </td>
+
+                            <td class="cart-quantity">
+
+                                <input value="" type="text" placeholder="Adet Giriniz" onkeypress="return isNumberKey(event)" required maxlength="3"  class="adetUrun">
+
+                            </td>
+
+                            <td class="cart-del">
+                                <a href="#" class="cart-remove"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart-image">
+                                <a href="/urun">
+                                    <img src="{% static "home/img/PUDRALILATEKS.jpg" %}" alt="">
+                                </a>
+                            </td>
+                            <td class="cart-ttl">
+                                <a href="/urun">Pudralı Lateks</a>
+                                <p>Renk: Blue</p>
+                                <p>Boyut: XS</p>
+                            </td>
+
+
+                            <td class="cart-quantity">
+                                <input value="" type="text" onkeypress="return isNumberKey(event)" required maxlength="3" placeholder="Adet Giriniz"
+                                       class="adetUrun">
+                            </td>
+
+                            <td class="cart-del">
+                                <a href="#" class="cart-remove"></a>
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cart-submit">
+
+                    <a href="/iletisim" class="cart-submit-btn">Fiyat İste</a>
+                    <a href="" class="cart-clear">Sepeti Temizle</a>
+                </div>
+            </form>
+            <!-- Cart Items - end -->
+
+        </section>
+
+        <script>
+             function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+         return true;
+      }
+
+        </script>
+
+
+    </main>
+    <!-- Main Content - end -->
+{% endblock %}
+
+
+
+<!-- Footer - start -->

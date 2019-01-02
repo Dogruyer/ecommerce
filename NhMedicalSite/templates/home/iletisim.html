@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<title>İletişim Formu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static "home/images/icons/favicon.ico"%}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/bootstrap/css/bootstrap.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/fonts/font-awesome-4.7.0/css/font-awesome.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/fonts/Linearicons-Free-v1.0.0/icon-font.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/animate/animate.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/css-hamburgers/hamburgers.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/animsition/css/animsition.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/select2/select2.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/vendor/daterangepicker/daterangepicker.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "home/css/utilcontact.css"%}">
+	<link rel="stylesheet" type="text/css" href="{% static "home/css/maincontact.css"%}">
+<!--===============================================================================================-->
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700ii%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "home/css/font-awesome.min.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/ion.rangeSlider.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/ion.rangeSlider.skinFlat.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/jquery.bxslider.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/jquery.fancybox.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/flexslider.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/swiper.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/swiper.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/style.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/media.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/main.css"%}">
+    <link rel="stylesheet" href="{% static "home/css/theme.css"%}">
+    <script src="{% static "home/js/app.js"%}"></script>
+    <script src="{% static "home/js/combined-min.js"%}"></script>
+    <script src="{% static "home/js/mask-min.js"%}"></script>
+    <script type="text/javascript" src="{% static "home/js/horizontal-filter.js"%}"></script>
+    <script type="text/javascript" src="{% static "home/js/theme.js"%}"></script>
+    <script type="text/javascript" src="{% static "home/js/downmenu.js.js"%}"></script>
+    <script type="text/javascript" src="{% static "home/js/ideatimer.js"%}"></script>
+</head>
+<body onLoad="ClosePageOver();">    <script type='text/javascript'>var ideaCompare = new IdeaCompare(10);</script>
+    <script type='text/javascript'>
+    function removeFromCompare(element) {
+        ideaCompare.removeFromCompare(element);
+    }
+    </script>
+    <div id='comparebox' style='display:none;width:1000px;height:600px;'><iframe id='compareframe' style='background-color:#FFFFFF;width:100%;height:100%;' scrolling='auto' frameborder='0' src=''></iframe></div>
+
+
+    <div id="scrollTop"></div>
+    <!-- <div class="dropMenuOverlay" style="display: none;"></div> -->
+    <div id="PageOver" style="z-index:998;visibility:hidden;"></div>
+
+
+  <div id="wrapper">
+    <div id="header">
+
+
+
+        {% comment %}    <div class="headerTop">
+                <div class="headerTopInside _clearfix">
+                    <div class="headerTopLeft _floatLeft">
+                        <div class="headerLinks">
+                            <ul>
+                                <li><a href="/">can-medikal.com</a></li>
+                                <li><a href="http://www.ailehekimmalzemeleri.com" target="_blank">ailehekimmalzemeleri.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headerTopCenter _floatLeft">
+                        <div class="headerBanner">
+                            <div class="banner-1"><img src="//st1.myideasoft.com/shop/dt/07/myassets/banner_pictures/banner_1.png?revision=1536836543"  alt=""></div>
+                        </div>
+                    </div>
+                    <div class="headerTopRight _floatRight">
+                        <div class="menuItemTemplateOne">
+                            <ul class="_clearfix">
+                                 <li><a href="/login" target="">Giriş Yap</a></li>
+	                             <li><a href="/register" target="">Kayıt Ol</a></li>
+
+								<li><a href="/iletisim" target="">İletişim</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>{% endcomment %}
+
+            <div class="headerTopRight _floatRight">
+                        <div class="menuItemTemplateOne">
+                            <ul class="_clearfix">
+
+	                             <li style="margin-top:15px;font-family:'Montserrat', sans-serif;"><a href="/kayit" target=""  style="font-size:15px;color: #15317E !important; font-weight:bold;"><i style="margin-left:61px;" class="fas fa-user-plus fa-lg"></i><br>Giriş Yap/Kayıt Ol</a></li>
+								 <li style="margin-top:15px;font-family:'Montserrat', sans-serif;"><a href="/sepet" target=""  style="font-size:15px;color: #15317E !important; font-weight:bold;"><i style="margin-left:15px;" class="fas fa-shopping-basket fa-lg"></i></i><br>Sepetim</a></li>
+                                <li style="margin-top:15px;font-family:'Montserrat', sans-serif;"><a href="/iletisim" target="" style="font-size:15px;color: #15317E !important; font-weight:bold;"><i style="margin-left:15px;" class="fas fa-phone-square fa-lg"></i> <br>İletişim</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+            <div class="headerMiddle">
+                <div class="headerMiddleInside _clearfix">
+                    <div class="headerMiddleLeft _floatLeft">
+                        <a href="/index" class="logo" title="Haspet">
+                            <img src="{% static "home/img/haspet.png"%}" alt="Haspet" />
+                        </a>
+                    </div>
+                    <div class="headerMiddleCenter _floatLeft">
+
+
+                    </div>
+                    <div class="headerMiddleRight _floatRight" style="margin-top:25px">
+                        <div class="userMenu">
+
+                        </div>
+                        <script type="text/javascript">
+                            jQuery(function(){
+                                additionalCartUpdate();
+                            });
+                            function additionalCartUpdate(){
+                                jQuery('.iCartPriceTotal').text(''+totalAmount.toFixed(2)+' '+ideacurr1.DefaultCurr+'');
+                            }
+                        </script>
+                        <div class="iCart">
+
+                             <script type="text/javascript">
+                                    jQuery(document).ready(function(){additionalCartUpdate();});
+                                    function additionalCartUpdate()
+                                    {
+                                        jQuery('#iCartListItemContainer').html('');ideacart1.products.each(function(item){var cartProducts = item;var cartObject = cartProducts[1];var cartPicture = cartId;/* Object Items */var cartAmount = parseFloat(cartProducts.value.amount);var cartBrandId = cartObject["brandId"];var cartBt = cartObject["bt"];var cartCategoryId = cartObject["categoryId"];var cartCurr = cartObject["curr"];var cartExt = cartObject["ext"];var cartId = cartObject["pid"];var cartPrice = cartObject["price"];var cartProductName = cartObject["product"];var cartProductNameFull = cartObject["product"];var cartRebate = cartObject["rebate"];var cartRebateType = cartObject["rebateType"];var cartRootProduct = cartObject["rootProduct"];var cartStockTypeLabel = cartObject["stockTypeLabel"];var cartTax = cartObject["tax"];/* General Price Control */var cartUpdatePrice = parseFloat(cartPrice);/* Rebate Control */if (cartRebate != 0) {if (cartRebateType == 0) {	cartUpdatePrice = cartRebate;} else {cartUpdatePrice = cartPrice * (100 - cartRebate) / 100}}/* Tax Control */cartUpdatePrice = cartUpdatePrice * (100 + cartTax) / 100;/* Item Total Amount */cartUpdatePrice = cartUpdatePrice * cartAmount;/* Add 3 Dots */var cartTruncate = true; // Urun adi kisaltma (true / false)
+                                        var ideaCloneScript = jQuery("head script:contains('ideacurr1')").html();
+                                            if(cartObject['curr'] == 'GR'){var grConvertPrice = cartUpdatePrice * ideaCloneScript.split('GR_')[1].replace('");','');cartUpdatePrice = grConvertPrice;cartCurr = 'TL';}
+                                            if(cartObject['curr'] == 'USD'){var grConvertPrice = cartUpdatePrice * ideaCloneScript.split('USD_')[1].split('-EUR')[0];cartUpdatePrice = grConvertPrice;cartCurr = 'TL';}
+                                            if(cartObject['curr'] == 'EUR'){var grConvertPrice = cartUpdatePrice * ideaCloneScript.split('EUR_')[1].split('-GBP')[0];cartUpdatePrice = grConvertPrice;cartCurr = 'TL';}
+                                            /* Urun adi kisaltilacaksa kac karakter olacak ?*/
+                                            var cartTruncateLimit = 48;
+                                            if(cartTruncate == true) {function add3Dots(string, limit) {var dots = "...";if(string.length > limit) {cartProductName = string.substring(0,limit) + dots;}}add3Dots(cartProductName,cartTruncateLimit);}if(cartRootProduct != 0){cartPicture = cartRootProduct;}else{cartPicture = cartId;}
+
+                                            var _cartItemTemplatePicture = '<div class="cartPicture _floatLeft mR5"><img src="/modules/catalog/products/pr_01_'+cartPicture+'_min.jpg" width="40" height="40" alt="" /></div>';
+                                            var _cartItemTemplateRemoveLink = '<a href="javascript:void(0)" onclick="IdeaCartNewDeleteProduct('+"'"+cartId+"_1'"+')"></a>';
+                                            var _cartItemTemplateTitle = '<a href="/index.php?do=catalog/product&pid='+cartId+'" title="'+cartProductNameFull+'">'+cartProductName+'</a>';
+                                            var _cartItemTemplateUnit = ''+cartAmount+' Adet';
+                                            var _cartItemTemplatePriceInformation = ''+cartUpdatePrice.toFixed(2)+' '+cartCurr+'';
+
+                                            /* Creating a Cart Items */
+                                            jQuery('#iCartListItemContainer').append(' \
+                                                <div class="iCartListItem _clearfix"> \
+                                                    <div class="iCartDelete"> \
+                                                        '+ _cartItemTemplateRemoveLink +' \
+                                                    </div> \
+                                                    <div class="iCartName"> \
+                                                        '+ _cartItemTemplateTitle +' \
+                                                    </div> \
+                                                    <div class="_clear"></div> \
+                                                    <div class="iCartNumber"> \
+                                                        '+_cartItemTemplateUnit +' \
+                                                    </div> \
+                                                    <div class="iCartPrice"> \
+                                                        '+ _cartItemTemplatePriceInformation +' \
+                                                    </div> \
+                                                    <div class="_clear"></div> \
+                                                </div> \
+                                            ');
+
+                                        });
+                                        /* Empty Cart Control */
+                                        if(ideacart1.productCount == 0){jQuery('#iCartEmptyContainer').html('<div class="iCartNoProduct">Alışveriş sepetinizde ürün bulunmamaktadır.</div>');}else{jQuery('#iCartEmptyContainer').html('');}
+                                        /* Cart Total Amount */
+                                        jQuery('.iCartPriceTotalAmount').html('<span>TOPLAM:</span> <div>'+totalAmount.toFixed(2)+' '+ideacurr1.DefaultCurr+'</div>');
+                                        jQuery('.iCartPriceTotal').html(''+totalAmount.toFixed(2)+' '+ideacurr1.DefaultCurr+'');
+                                        /* Image Control */
+                                        jQuery('.iCartListItem img').error(function(){jQuery(this).attr('src','/images/nopic_product.jpg');});
+                                    }
+                                    /* Cart Item Remove Function */	function IdeaCartNewDeleteProduct(itemId){ideacart1.CompleteRemoveFromCart(itemId);SaveCart(escape(ideacart1.products.inspect()),'type=r,method=post');ideacart1.ReloadCart();if(typeof additionalCartUpdate!="undefined"){additionalCartUpdate();}document.location.reload(true);}
+                                </script>
+                            <div class="iCartContent dropBoxContent">
+                                <div id="iCartListItemContainer"></div>
+                                <div id="iCartEmptyContainer"></div>
+                                <div class="iCartPriceTotalAmount _clearfix"></div>
+                                <div class="iCartLink">
+                                    <a href="/index.php?do=catalog/order">HEMEN AL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerBottom">
+                <div class="headerBottomRow">
+                    <div class="headerBottomInside _clearfix">
+
+                            <div style="margin-top:8px;" class="banner-2"><img src="//st2.myideasoft.com/shop/dt/07/myassets/banner_pictures/banner_2.png?revision=1536836666"  alt=""></div>
+
+                    </div>
+                </div>
+                <div class="headerBottomRow">
+                    <div class="headerBottomInside _clearfix">
+                        <div class="indexHome"><a href="/"></a></div>
+                        <script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery(".dropMenu").SmartyDropMenu({
+    dropMenuSubCategoryWidth: 1200,
+    numberOfColumns: 2,
+    extraLeftSpace: 0,
+    dropMenuEffect: "fade",
+    InEffect : "def",
+    OutEffect : "def",
+    speedIn: 0,
+    speedOut: 1,
+    showOrHideThirdLevelCategory: 0,
+    countThirdLevelCategories: 0,
+    removeThirdLevelCategories: 1
+});
+});
+</script>
+<div class="dropMenu">
+<ul>
+
+    <li id="dropMenuCategory-216">
+        <a href="/magaza"><span>MUAYENE ÜRÜNLERİ</span></a>
+
+    </li>
+
+
+    <li id="dropMenuCategory-218">
+        <a href="/magaza"><span>MARKET ÜRÜNLERİ</span></a>
+
+    </li>
+
+
+    <li id="dropMenuCategory-217">
+        <a href="/magaza"><span>ENDÜSTRİYEL ÜRÜNLER</span></a>
+
+    </li>
+
+
+    <li id="dropMenuCategory-223">
+        <a href="/magaza"><span>MASKE</span></a>
+
+    </li>
+
+
+    <li id="dropMenuCategory-221">
+        <a href="/magaza"><span>HASTANE MALZEMELERİ</span></a>
+    </li>
+
+
+    <li id="dropMenuCategory-222">
+        <a href="/magaza"><span>OSGB - İSGB MALZEMELERİ</span></a>
+
+    </li>
+
+
+    <li id="dropMenuCategory-219">
+        <a href="/magaza"><span>MEDİKAL ÜRÜNLER</span></a>
+
+    </li>
+
+    <li id="dropMenuCategory-220">
+        <a href="/magaza"><span>TIBBİ SARF MALZEMELER</span></a>
+    </li>
+
+</ul>
+</div>
+                        <div class="cartIcon"><a href="/index.php?do=catalog/order"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					NH Medical İletişim Formu
+				</span>
+
+				<label class="label-input100" for="first-name">Ad  Soyad *</label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="Adınız">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+					<input class="input100" type="text" name="last-name" placeholder="Soyadınız">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email">E-mail Adresini Giriniz *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="E-mail : ornek@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Telefon Numaranızı Giriniz  *</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Örn: +90 599 XXXXXX">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message">Mesajınız *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea id="message" class="input100" name="message" placeholder="Mesajınızı yazınız"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						ONAYLA
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url({% static "home/img/bg-01.jpg"%}");>
+				<div class="flex-w size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-map-marker"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Adres
+						</span>
+
+						<span class="txt2">
+							Oruç Reis Mah. Giyimkent
+							Sitesi 10. Sokak No:31
+							Atışalanı/Esenler/İstanbul 
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Telefon
+						</span>
+
+						<span class="txt3">
+							
+						  0212 438 7376
+						  <br>
+						  0212 438 8145 
+						  
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-printer"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Fax
+						</span>
+
+						<span class="txt3">
+							0212 438 8146
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+
+
+
+<div id="footer">
+            <div class="footerTop">
+                <div class="footerTopInside">
+                    <div class="footerBanner _clearfix">
+                           <div class="banner-1 _floatLeft"><img src="{% static "home/img/hizlikargo.svg"%}"  width="50%" height="50%"  alt=""></div>
+                        <div class="banner-2 _floatLeft"><img src="{% static "home/img/guvenlıodeme.png"%}" width="80%" height="80%"  alt=""></div>
+                        <div class="banner-3 _floatLeft"><img src="{% static "home/img/orijinal.png"%}" width="50%" height="50%"   alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerMiddle">
+                <div class="footerMiddleRow">
+                    <div class="footerMiddleInside _clearfix">
+                        <div class="footerMiddleLeft">
+                            <div class="footerLinks">
+                                 <ul class="_clearfix" style="margin-left:300px !important;">
+<li>
+    <div class="footerLinksTitle">Kurumsal</div>
+    <ul class="_clearfix">
+        <li><a href="/iletisim">İletişim</a></li>
+
+    </ul></li>
+<li>
+    <div class="footerLinksTitle">Müşteri Hizmetleri</div>
+    <ul class="_clearfix">
+        <li><a href="/iletisim">Yeni Ürün Önerin</a></li>
+        <li><a href="/iletisim">Garanti Şartları</a></li>
+        <li><a href="https://www.araskargo.com.tr/tr/index.aspx?cargo=1" target="_blank">Kargo Takip</a></li>
+    </ul></li>
+<li>
+    <div class="footerLinksTitle">Alışveriş</div>
+    <ul class="_clearfix">
+        <li><a href="/iletisim">İade&nbsp;Şartları</a></li>
+        <li><a href="/iletisim">Mesafeli Satış Sözleşmesi</a></li>
+        <li><a href="/iletisim">Gizlilik ve Güvenlik</a> </li>
+    </ul>
+</li>
+</ul> 								</div>
+                        </div>
+
+                    </div>
+                    <div class="footerMiddleRow">
+                        <div class="footerMiddleInside">
+                            <div class="footerBanner _clearfix">
+                                <div class="banner-5 _floatright"><img class="center-block" src="//st2.myideasoft.com/shop/dt/07/myassets/banner_pictures/banner_14.png?revision=1471961773"  alt=""></div>
+                                <div class="banner-6 _floatRight"><img src="static/img/sosyalmedya/secure.png"  alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottomInside _clearfix">
+                    Copyright 2018 nhmedical - Tüm hakları saklıdır. Kredi kartı bilgileriniz 256bit SSL sertifikası ile korunmaktadır.
+                </div>
+            </div>
+        </div>
+
+<!-- Footer - end -->
+
+
+<!-- jQuery plugins/scripts - start -->
+<script src="{% static "home/js/jquery-1.11.2.min.js" %}"></script>
+<script src="{% static "home/js/jquery.bxslider.min.js"%}"></script>
+<script src="{% static "home/js/fancybox/fancybox.js"%}"></script>
+<script src="{% static "home/js/fancybox/helpers/jquery.fancybox-thumbs.js"%}"></script>
+<script src="{% static "home/js/jquery.flexslider-min.js"%}"></script>
+<script src="{% static "home/js/swiper.jquery.min.js"%}"></script>
+<script src="{% static "home/js/jquery.waypoints.min.js"%}"></script>
+<script src="{% static "home/js/progressbar.min.js"%}"></script>
+<script src="{% static "home/js/ion.rangeSlider.min.js"%}"></script>
+<script src="{% static "home/js/chosen.jquery.min.js"%}"></script>
+<script src="{% static "home/js/jQuery.Brazzers-Carousel.js"%}"></script>
+<script src="{% static "home/js/plugins.js"%}"></script>
+<script src="{% static "home/js/main.js"%}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAYvx0GmLyN5hlf6Uv_e9pPvUT3YpozE"></script>
+<script src="{% static "home/js/gmap.js"%}"></script>
+<!-- jQuery plugins/scripts - end -->
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/jquery/jquery-3.2.1.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/animsition/js/animsition.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/bootstrap/js/popper.js"%}"></script>
+	<script src="{% static "home/vendor/bootstrap/js/bootstrap.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/select2/select2.min.js"%}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/daterangepicker/moment.min.js"%}"></script>
+	<script src="{% static "home/vendor/daterangepicker/daterangepicker.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "home/vendor/countdowntime/countdowntime.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "home/js/maincontact.js"%}"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+</html>
